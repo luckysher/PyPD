@@ -11,3 +11,6 @@ class PDFDemo:
     """
     def __init__(self, pdfFileName):
         self.pdfFile = pdfFileName
+
+        self.siteIcon = os.path.join(os.getcwd(), "inputs/pd_icon/site_icon.png")
+        self.siteIcon2 = os.path.join(os.getcwd(), "inputs/pd_icon/site-icon2.png")
