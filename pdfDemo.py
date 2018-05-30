@@ -19,6 +19,12 @@ class PDFDemo:
         self.rIcon = os.path.join(os.getcwd(), "inputs/pd_icon/rate_icon.png")
 
 
+    def addIcons(self):
+        """
+        Add icons to the PDF file
+        :return:
+        """
+
 
 
 
