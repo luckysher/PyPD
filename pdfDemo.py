@@ -4,6 +4,7 @@
 #                                                 #
 ###################################################
 import os
+from utils import *
 
 class PDFDemo:
     """
@@ -18,13 +19,12 @@ class PDFDemo:
         self.crsIcon = os.path.join(os.getcwd(), "inputs/pd_icon/cross.jpg")
         self.rIcon = os.path.join(os.getcwd(), "inputs/pd_icon/rate_icon.png")
 
-
-    def addIcons(self):
+    def createPDF(self):
         """
-        Add icons to the PDF file
+        Method for creating PDF file
         :return:
         """
-
+        generatePDF(self.pdfFile)
 
 
 
