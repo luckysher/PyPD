@@ -13,11 +13,11 @@ class PDFDemo:
     def __init__(self, pdfFileName):
         self.pdfFile = pdfFileName
 
-        self.siteIcon = os.path.join(os.getcwd(), "inputs/pd_icon/site_icon.png")
-        self.siteIcon2 = os.path.join(os.getcwd(), "inputs/pd_icon/site-icon2.png")
-        self.cIcon = os.path.join(os.getcwd(), "inputs/pd_icon/check.jpg")
-        self.crsIcon = os.path.join(os.getcwd(), "inputs/pd_icon/cross.jpg")
-        self.rIcon = os.path.join(os.getcwd(), "inputs/pd_icon/rate_icon.png")
+        self.siteIcon = os.path.join(os.getcwd(), "input/pd_icon/site_icon.png")
+        self.siteIcon2 = os.path.join(os.getcwd(), "input/pd_icon/site-icon2.png")
+        self.cIcon = os.path.join(os.getcwd(), "input/pd_icon/check.jpg")
+        self.crsIcon = os.path.join(os.getcwd(), "input/pd_icon/cross.jpg")
+        self.rIcon = os.path.join(os.getcwd(), "input/pd_icon/rate_icon.png")
 
     def createPDF(self):
         """
@@ -33,7 +33,8 @@ class PDFDemo:
         """
         if logo:
             addIconToPdf('logo')
-
+        if checkIcon:
+            addIconToPdf(iconType='check')
 
 
 
