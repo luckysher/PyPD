@@ -31,7 +31,9 @@ class PDFDemo:
         Add icons to the PDF file
         :return:
         """
-        pass
+        if logo:
+            addIconToPdf('logo')
+
 
 
 
