@@ -26,6 +26,13 @@ class PDFDemo:
         """
         generatePDF(self.pdfFile)
 
+    def addIcons(self, logo=False, checkIcon=False, cross=False):
+        """
+        Add icons to the PDF file
+        :return:
+        """
+        pass
+
 
 
 
