@@ -35,3 +35,18 @@ def addIconToPdf(iconType='logo'):
 
     if iconType == 'cross':
         print("adding cross icon to PDF")
+
+def addTextStrToPDF(text):
+    """
+    Add a text string to given PDF file object
+    :param text:
+    :return:
+    """
+
+    try:
+        pdfFileObj = open(os.path.join(os.getcwd(), 'input/sample.pdf'), 'rb')
+        pdfFileObj.addTextString(text)
+    except:
+        pass
+
+    print("added text string to PDF file")
