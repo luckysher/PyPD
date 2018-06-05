@@ -42,5 +42,5 @@ class PDFDemo:
 if __name__ == '__main__':
     pdfGen = PDFDemo()
     pdfGen.createPDF()
-
+    pdfGen.addIcons(logo=True)
 
