@@ -18,6 +18,7 @@ class PDFDemo:
         self.cIcon = os.path.join(os.getcwd(), "input/pd_icon/check.jpg")
         self.crsIcon = os.path.join(os.getcwd(), "input/pd_icon/cross.jpg")
         self.rIcon = os.path.join(os.getcwd(), "input/pd_icon/rate_icon.png")
+        print("Generating PDF file: '%s'" % self.pdfFile)
 
     def createPDF(self):
         """
@@ -41,4 +42,5 @@ class PDFDemo:
 if __name__ == '__main__':
     pdfGen = PDFDemo()
     pdfGen.createPDF()
+
 
