@@ -35,15 +35,8 @@ class PDFDemo:
             addIconToPdf('logo')
         if checkIcon:
             addIconToPdf(iconType='check')
-
-
-
-
-
-
-
-
-
+        if cross:
+            addIconToPdf(iconType='cross')
 
 if __name__ == '__main__':
     pdfGen = PDFDemo()
